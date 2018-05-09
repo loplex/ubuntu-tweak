@@ -1,3 +1,274 @@
+ubuntu-tweak (0.8.8-1~trusty1) trusty; urgency=low
+
+  * Overview of Changes:
+    - Janitor: Cache path of Mozilla Firefox and Thunderbird changed to
+      ~/.cache (LP #1280540)
+    - Add support to clean the cache2 folder for Firefox
+
+  * Bugs fixed
+    - Show "Computer Icon" and rename will crash in 14.04 (Bug #1323686)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Sun, 04 May 2014 19:40:00 +0800
+
+ubuntu-tweak (0.8.7-1~trusty2) trusty; urgency=low
+
+  * Overview of Changes:
+    - Add support for Ubuntu 14.04 Trusty Tahr
+    - Add Support for Minimize from Unity Launcher
+    - Add toggle for Nautilus Recursive Search
+
+  * Bugs fixed
+    - Fix the nautilus scripts support for Ubuntu 13.10 and later
+    (LP: #1242379)
+    - Going to workspace adjustement automatically add keyboard shortcut for
+    fade screen (LP: #1240005)
+    - Missing options: fonts, desktop icons,window, file manager
+    (LP: #1250252)
+    - Never crash when sources.list is not parsable (LP: #1246348)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Sat, 09 Nov 2013 19:37:15 +0800
+
+ubuntu-tweak (0.8.6-1~precise1) precise; urgency=low
+
+  * Overview of Changes:
+    - Add support for Ubuntu 13.10 Saucy Salamander, drop support for Ubuntu
+    11.10 Oneiric
+    - Improve the old kernels clean up, now it will find out more old kernels
+    - Disable appcenter and sourcecenter, they are no longer maintained
+
+  * LP:s fixed
+    - Modules show error with "expected string or buffer" (LP: #880663)
+    - Ubuntu Tweak crashed while processing override (LP: #1195550)
+    - Problem showing error dialog if dest path contains special characters
+    e.g. "ö" (LP: #1203049)
+    - Ubuntu Tweak crached in logo in GNOME 3.8 (LP: #1144075)
+    - LovewallpaperHD failed to load (LP: #1071414)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Wed, 05 Jun 2013 10:14:13 +0800
+
+ubuntu-tweak (0.8.5-1~precise2) precise; urgency=low
+
+  * Overview of Changes
+    - The Window settings is back for Ubuntu 13.04
+
+  * Bugs fixed
+    - "Browse as root" script error (LP: #1177169)
+    - ubuntu tweak crashes on updating software list (LP: #1081235)
+    - Ubuntu 13.04 Posible bug in fonts selector and window configurations
+      (LP: #1173275)
+    - wrong german translation for reporting a bug (Melden/Berichten)
+      (LP: #1177128)
+    - Can't change window theme [Ubuntu Tweak 0.8.4, Raring] (LP: #1172760)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Tue, 07 May 2013 21:55:15 +0800
+
+ubuntu-tweak (0.8.4-1~precise1) precise; urgency=low
+
+  * Bugs fixed
+    - Ubuntu 13.04 should upgrade the path of scripts (LP: #1155854)
+    - creating of a hard link to a directory crashes UT (LP: #1092086)
+    - Janitor only shows "System" (LP: #1101264)
+    - Window button tweak error in 13.04 (LP: #1114576)
+    - ubuntu tweak crashes on updating software list (LP: #1081235)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Thu, 25 Apr 2013 18:01:15 +0800
+
+ubuntu-tweak (0.8.3-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - Add two mirrors for Apps remote data
+    - Update the overlay scrollbar settings for Ubuntu 12.10
+
+  * Bugs fixed
+    - Ignore the Unity WebApp specific action like S0 ~ S1 (LP: #1076417)
+    - Fix ubuntu-tweak crashed with SIGSEV in PyGILState_Ensure() (LP: #1074853)
+    - Improve "Auto detect text encoding for Chinese in Gedit" (LP: #1074572)
+    - thumbnailcache_plugin uses deprecated path (LP: #1090364)
+    - File Manager module encountered error while loading (LP: #1073795)
+    - ubuntu-tweak is top crasher on errors.ubuntu.com (LP: #1086722)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Fri, 21 Dec 2012 11:12:56 +0800
+
+ubuntu-tweak (0.8.2-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - Show apps installation status
+    - No more Desktop Recovery and Shortcut for 12.10
+    - Add option to turn off Unity Web Apps
+    - Remove "show User indicator" option for 12.10
+    - Love Wallpaper HD is ready
+
+  * Bugs fixed
+    - Quicklists load failed in 12.04 (LP: #1073004)
+    - Window control button position not working for Ubuntu 12.10 (LP: #1061218)
+    - Window titlebar font setting is not working under 12.10 (LP: #1069669)
+    - Window theme setting is not working under 12.10 (LP: #1069670)
+    - Error in Translations it.po (LP: #1069028)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Sun, 04 Nov 2012 16:00:22 +0800
+
+ubuntu-tweak (0.8.1-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - Add Disable "Show Desktop" in the switcher (12.10 only)
+    - Add the Apps shortcut to Unity launcher icon
+    - QuickLists Editor support 12.10 and reordering the unity items
+    - Add installation status in app view
+    - Disable the Window tweaks for 12.10
+    - Add cookie and cache (12.10 only) support for Apps
+
+  * Bugs fixed
+    - Increase the default window size to 900x506 (LP: #1064392)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Wed, 10 Oct 2012 14:20:31 +0800
+
+ubuntu-tweak (0.8.0-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - New web based Apps feature to let you install latest apps easily
+      - Always keep up-to-date (need Internet connection)
+      - In the same interface, you can manage the app and source
+      - List of new apps recently added (Bug #729411)
+
+  * Bugs fixed
+    - Fix misspelled item "Shortcut hits overlay:" (LP: #1035960)
+    - Janitor preparation to remove kernels results in crash of Ubuntu Tweak (LP: #1051717)
+    - Scripts bugs image convert if file has some spaces (LP: #1057422)
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Mon, 08 Oct 2012 14:56:01 +0800
+
+ubuntu-tweak (0.7.3-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - Add support for Linux Mint 13 (LP: #1014330)
+    - Add feature to turn on/off guest accounts (LP: #1025326)
+    - Add linux-image-extra to Janitor old kernel clean list (LP: #1031585)
+
+  * Bugs fixed
+    - LP: #993800 QuickList Editor lost Edits
+    - LP: #1019812 Ubuntu Tweak crashes on ubuntu 12.10
+    - LP: #1031741 Need to update utdata url
+    - LP: #1013656 module import error and administration doesn't work
+    - LP: #1014799 Tweak tab hangs with 0.7.3.0 testing
+    - LP: #1016199 LightDM plugin should be active if lightDM is the DM
+    - LP: #1014300 Screen edges actions are reversed in right to left locals
+    - LP: #1015835 Janitor crash when try to select apt cache checkbox
+    - LP: #1017820 Error message when clicking on "Session indicator" when indicator-session is not installed isn't clear enough
+    - LP: #1021290 AttributeError: 'NoneType' object has no attribute 'present'
+    - LP: #1032883 ubuntu tweak scripts
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Sun, 12 Aug 2012 11:35:55 +0800
+
+ubuntu-tweak (0.7.2-1~precise1) precise; urgency=low
+
+  * Overview of Changes
+    - LP: #998184 Integration with Ubuntu's System Settings app 
+
+  * Bugs fixed
+    - LP: #998411 Invalid values for resetting fonts 
+    - LP: #998594 Ubuntu Tweak reported a negative number of bytes for removing old kernels 
+    - LP: #998626 Pressed the file manager, an error message appears 
+    - LP: #998742 crash while searching for old kernels to clean 
+    - LP: #999072 ubuntu tweack "miscellaneous" crash 
+    - LP: #1000682 Recently Used should not display the items doesn't work for current desktop 
+    - LP: #1001551 Janitor tab is empty 
+    - LP: #1001779 Crash while trying to add a custom command in File Type Manager 
+    - LP: #1002026 Click on Sessing module generates "this module encountered an error while loading" 
+    - LP: #1002594 Houve erro ao carregar o modulo. 
+    - LP: #1004172 NameError in utils.walk_directories 
+    - LP: #1005485 Font settings are not displayed in gnome-fallback session 
+    - LP: #1007859 launching desktop icond from within ubuntu tweak
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Sun, 03 Jun 2012 15:20:54 +0800
+
+ubuntu-tweak (0.7.1-1~precise1) precise; urgency=low
+
+   * Overview of Changes
+    - Add composite, workspace and dash color options to Unity 2D (LP: #994376)
+    - Add locale support to QuickLists Editor (LP: #995333)
+    - Add Ubuntu Overlay Scrollbars tweak (LP: #996324)
+    - Add Settings for "Show Desktop Icon in launcher" (LP: #997513)
+
+  * Bugs fixed
+    - LP: #982632 Window module fails to load on Xubuntu, Lubuntu
+    - LP: #988564 ubuntu-tweak 0.7.0 (oneiric/unity-2d) crashes in Unity settings
+    - LP: #990270 Ubuntu Tweak crash after install in Ubuntu 12.04 system76 laptop
+    - LP: #992581 nautilus script-worker fails on 12.04
+    - LP: #995748 Natural Scrolling takes no effect in some places
+    - LP: #987573 Old kernel janitor in infinite loop
+    - LP: #988554 ubuntu tweak login settings crashes
+    - LP: #988659 If gedit is not installed, Ubuntu Tweak will crash
+    - LP: #993334 Update Dialog API in Source Center
+    - LP: #994980 The search icon is missing in Ubuntu 12.04 default theme
+    - LP: #995135 Quicklists editor crashed when no desktop file
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Fri, 11 May 2012 15:30:06 +0800
+
+ubuntu-tweak (0.7.0-1~precise4) precise; urgency=low
+
+  * Overview of Changes
+    - Four features are back: App Center, Source Center, Templates and Scripts
+      - Source Center with integrated PPA Purge feature
+      - App Center with "Installed Apps" view
+    - Improved Janitor feature with cleaning apps cache and UI polish
+    - Global fuzz search
+    - QuickLists Editor to edit the Unity Launcher
+    - Login settings for 12.04: play sound feature
+    - More Unity settings and new Workspace settings
+    - Add support for icon install
+    - UI Polishes:
+      - Grid container in all tweaks
+      - Use scrollbar in Clip page
+      - No scrollbar in Recently
+
+  * Bugs fixed
+    - LP: #965325 Janitor items briefly appear then disappear
+    - LP: #962123 tweak crashed when i clicked on Nautilus button
+    - LP: #894772 Add unity-launcher-editor to ubuntu-tweak
+    - LP: #984877 Ubuntu12.04 Ubuntu Tweak翻译问题
+    - LP: #982891 For the unity launcher hide mode is not set to "original condition" (the default behavior in Ubuntu 11.10).
+    - LP: #982397 Update items in janitor section while removing
+    - LP: #769841 User discretion advised when unselecting the "show desktop icons" checkbox in Desktop->Desktop Icon Settings
+    - LP: #987098 Add background and logo setting for 12.04
+    - LP: #974678 Gtk-error due to a non-existing HTML tag (resulting from a typo in translation)
+    - LP: #951869 Display duration of Ubuntu Tweak's splash screen is not useful
+    - LP: #944100 The program crash when dragging 'active window transparency level'&'inactive window shade transparency level'
+    - LP: #688795 feature request: add 'All Installed' category to 'Application Center'
+    - LP: #986527 after atualizaction the ajustment tab crashes
+    - LP: #973428 [Feature Request] Add BleachBit style system cleaner to Janitor
+    - LP: #962753 Source center refresh never completes
+    - LP: #941544 GNOME Shell issues
+    - LP: #804942 PPA Purge doesn't work!
+    - LP: #962951 uniti 2d
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Wed, 25 Apr 2012 23:20:24 +0800
+
+ubuntu-tweak (0.6.1-1~oneiric1) oneiric; urgency=low
+
+  * Overview of Changes
+    - Hide the login background setting for 12.04 Precise, because LightDM already supports it
+
+  * Bugs fixed
+    - LP: #905914 Ubuntu Tweak 0.6 Interface doesn't work on 11.10
+    - LP: #926420 Unity Tweaks crashes 12.04
+    - LP: #911428 crash on compiz settings
+    - LP: #920311 Ubuntu Tweak 0.7.0 Crashes on Lubuntu 11.10 when Session Control is Clicked
+    - LP: #908012 Unity Launcher quicklists' Overview doesn't work when in other page
+    - LP: #908441 No Desktop Font option in 'Fonts'
+    - LP: #921195 Spelling error in tweaks->desktop fonts
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Fri, 10 Feb 2012 14:01:16 +0800
+
+ubuntu-tweak (0.6.0-1~oneiric1) oneiric; urgency=low
+
+  * New upstream version:
+    - Brand new UI and interaction
+    - New Overview and Janitor feature and other more tweaks
+    - Supports the latest Ubuntu 11.10 Oneiric Ocelot and later
+    - Every part of Ubuntu Tweak is plug-able
+
+ -- Tualatrix Chou <tualatrix@gmail.com>  Fri, 23 Dec 2011 14:00:46 +0800
+
 ubuntu-tweak (0.5.14-1~natty1) natty; urgency=low
 
   * Improve the PPA Purge:
