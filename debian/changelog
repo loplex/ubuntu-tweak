@@ -1,3 +1,10 @@
+ubuntu-tweak (0.8.8-1+lopin1) UNRELEASED; urgency=medium
+
+  * debian packaging by lopin
+    - changed dependencies to met Ubuntu Bionic
+
+ -- Martin Lopatář <lopin@dataplex.cz>  Thu, 10 May 2018 00:39:49 +0200
+
 ubuntu-tweak (0.8.8-1~trusty1) trusty; urgency=low
 
   * Overview of Changes:
